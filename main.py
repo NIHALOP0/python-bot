@@ -5,13 +5,13 @@ import telebot
 ##TOKEN DETAILS
 TOKEN = "TRON"
 
-BOT_TOKEN = "5710284858:AAHcIDYAtWAC01p8BsHRl4cIwhcKpBqNlTQ"
-PAYMENT_CHANNEL = "@testpostchnl" #add payment channel here including the '@' sign
-OWNER_ID = 5151868182 #write owner's user id here.. get it from @MissRose_Bot by /id
-CHANNELS = ["@testpostchnl"] #add channels to be checked here in the format - ["Channel 1", "Channel 2"] 
+BOT_TOKEN = "7510811043:AAGn2PqfJDv_n9PnZ_g6cWmYd4gXiOrNqJ4"
+PAYMENT_CHANNEL = "@NIHALPAYMENT" #add payment channel here including the '@' sign
+OWNER_ID = 6286497370 #write owner's user id here.. get it from @MissRose_Bot by /id
+CHANNELS = ["@NIHALFFSTORE"] #add channels to be checked here in the format - ["Channel 1", "Channel 2"] 
               #you can add as many channels here and also add the '@' sign before channel username
 Daily_bonus = 1 #Put daily bonus amount here!
-Mini_Withdraw = 0.5  #remove 0 and add the minimum withdraw u want to set
+Mini_Withdraw = 50₹  #remove 0 and add the minimum withdraw u want to set
 Per_Refer = 0.0001 #add per refer bonus here
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -98,7 +98,7 @@ def start(message):
         markups = telebot.types.InlineKeyboardMarkup()
         markups.add(telebot.types.InlineKeyboardButton(
             text='🤼‍♂️ Joined', callback_data='check'))
-        msg_start = "*🍔 To Use This Bot You Need To Join This Channel - \n➡️ @ Fill your channels at line: 101 and 157*"
+        msg_start = "*🍔 To Use This Bot You Need To Join This Channel - \n➡️ @NIHALFFSTORE: 101 and 157*"
         bot.send_message(user, msg_start,
                          parse_mode="Markdown", reply_markup=markups)
    except:
